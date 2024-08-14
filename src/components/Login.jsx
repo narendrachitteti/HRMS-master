@@ -12,18 +12,22 @@ const Login = ({ setIsLoggedIn }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   if (email && password) {
+  //     setIsLoggedIn(true);
+  //     navigate('/admin-dashboard');
+  //   } 
+  //   else {
+  //     alert('Please enter both email and password.');
+  //   }
+  // };
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (email && password) {
-      setIsLoggedIn(true);
-      navigate('/admin-dashboard');
-    } 
-    else {
-      navigate('/admin-dashboard');
-      // alert('Please enter both email and password.');
-    }
+    setIsLoggedIn(true);
+    navigate('/admin-dashboard');
   };
-
+  
   return (
     <div className="login-container">
       <div className="login-image">
