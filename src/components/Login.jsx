@@ -39,7 +39,7 @@ const Login = ({ setIsLoggedIn }) => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               style={{ color: '#b0acac' }}
-              required
+              // required
             />
           </div>
           <div>
@@ -50,7 +50,7 @@ const Login = ({ setIsLoggedIn }) => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               style={{ color: '#b0acac' }}
-              required
+              // required
             />
           </div>
           <div className="remember-forgot-container">
