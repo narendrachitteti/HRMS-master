@@ -18,9 +18,10 @@ const Login = ({ setIsLoggedIn }) => {
       setIsLoggedIn(true);
       navigate('/admin-dashboard');
     } 
-    // else {
-    //   alert('Please enter both email and password.');
-    // }
+    else {
+      navigate('/admin-dashboard');
+      // alert('Please enter both email and password.');
+    }
   };
 
   return (
