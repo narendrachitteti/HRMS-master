@@ -17,9 +17,10 @@ const Login = ({ setIsLoggedIn }) => {
     if (email && password) {
       setIsLoggedIn(true);
       navigate('/admin-dashboard');
-    } else {
-      alert('Please enter both email and password.');
-    }
+    } 
+    // else {
+    //   alert('Please enter both email and password.');
+    // }
   };
 
   return (
