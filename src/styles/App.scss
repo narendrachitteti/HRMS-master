@@ -1,0 +1,20 @@
+// App.scss
+@import './variables';
+
+.app {
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  transition: margin-left $animation-duration;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.content {
+  overflow-y: auto;
+  // margin-left: 100px;
+}
