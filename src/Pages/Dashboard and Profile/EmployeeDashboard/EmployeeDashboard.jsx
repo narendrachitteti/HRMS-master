@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import Admin_IMG from '../../assets/user.png'
+import Admin_IMG from '../../../assets/user.png'
 import { GiAlarmClock } from "react-icons/gi";
 import { FaAngleDown, FaChevronRight, FaRegCalendarAlt } from "react-icons/fa";
 import { LiaBirthdayCakeSolid } from "react-icons/lia";
-import img_emp1 from '../../assets/emp1.png'
+import img_emp1 from '../../../assets/emp1.png'
 import { TfiLayoutMenuSeparated } from "react-icons/tfi";
 import { RiUser6Line } from "react-icons/ri";
 import { IoMdTrendingDown, IoMdTrendingUp } from "react-icons/io";
@@ -221,7 +221,7 @@ const EmployeeDashboard = () => {
                         xAxis={[
                             { scaleType: 'band', data: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], },
                         ]}
-                        style={{ width: '100%', height: '480px' }}
+                        style={{ width: '100%', height: '470px' }}
                     />
 
                 </div>

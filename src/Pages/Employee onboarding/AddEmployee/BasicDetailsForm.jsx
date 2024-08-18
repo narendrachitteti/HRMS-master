@@ -1,12 +1,10 @@
 import { useState } from 'react';
-import '../styles/EmployeeForm.scss';
-import { HiUserPlus } from "react-icons/hi2";
+import './AddEmloyee.scss';
+import './NavbarForm.scss';
 import { CiCircleChevRight } from "react-icons/ci";
 import { TfiClose } from "react-icons/tfi";
 import { GrCloudUpload } from "react-icons/gr";
-import Confetti from 'react-confetti';
-
-const EmployeeForm = () => {
+const BasicDetailsForm = ({ onSubmit }) => {
     const [fileName, setFileName] = useState('');
     const [isUploaded, setIsUploaded] = useState(false);
 
@@ -30,7 +28,6 @@ const EmployeeForm = () => {
         employeeStatus: '',
         sourceOfHire: ''
     });
-    const [showAlert, setShowAlert] = useState(false);
 
     const handleFileChange = (event) => {
         const file = event.target.files[0];
@@ -51,8 +48,10 @@ const EmployeeForm = () => {
             [name]: value
         }));
     };
-
     const handleSubmit = (event) => {
+        event.preventDefault();
+
+
         event.preventDefault();
         console.log(formData);
         setShowAlert(true);
@@ -81,38 +80,14 @@ const EmployeeForm = () => {
             employeeStatus: '',
             sourceOfHire: ''
         });
-        setFileName('');
-        setIsUploaded(false);
     };
 
     return (
         <>
-            {showAlert ? <div><Confetti /> <div id='showAlert'><p>Form Submit Successfully</p></div> </div> : ''}
-            <div className="employee-form">
-                <div className="top-bar">
-                    <h2><div className='span'><HiUserPlus /></div>Add Employee</h2>
-                    <span className="close_nav"><TfiClose /></span>
-                    <div className="">
-                        <span className="1"></span>
-                        <span className="2"></span>
-                        <span className="3"></span>
-                        <span className="4"></span>
-                        <span className="5"></span>
-                        <span className="6"></span>
-                        <span className="7"></span>
-                        <span className="8"></span>
-                        <span className="9"></span>
-                        <span className="10"></span>
-                    </div>
-                </div>
-
-                <div className="navbar-items">
-                    <span className='active'>Basic Details</span>
-                    <span>Contacts</span>
-                    <span>Experience</span>
-                    <span>Education</span>
-                    <span>Documents</span>
-                </div>
+            <div className="" onSubmit={onSubmit}>
+                {/* <form >
+                    <button type="submit">next </button>
+                </form> */}
                 <form onSubmit={handleSubmit}>
                     <div className="from1">
                         <div className="form-group">
@@ -347,7 +322,7 @@ const EmployeeForm = () => {
 
                     <div id='submitBtn' >
                         <div className='div'>
-                            <button type="submit">Submit </button>
+                            <button type="submit" >Submit </button>
                             <span><CiCircleChevRight /></span>
                         </div>
                         <div className="lineBar"></div>
@@ -361,5 +336,4 @@ const EmployeeForm = () => {
     );
 };
 
-export default EmployeeForm;
-// 
+export default BasicDetailsForm;

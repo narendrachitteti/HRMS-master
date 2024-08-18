@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@import "../../../styles/variables";
 
 .ADMIN_EMP {
   overflow-y: scroll;
@@ -40,7 +40,8 @@
       div {
         gap: 20px;
         h2 {
-          font-size: 28px;
+          font-size: 1.7rem !important; 
+          // border: 1px solid red;
         }
         p {
           font-size: 16px;
@@ -128,6 +129,7 @@
       gap: 10px;
       .Attendance_Overview {
         width: 100%;
+        // border: 1px solid red;
         height: fit-content;
         background: linear-gradient(313.96deg, #27014a 55.43%, #7a19d3 132.82%);
         border-radius: 10px;
@@ -197,6 +199,7 @@
           align-items: center;
           justify-content: space-between;
           padding: 10px 20px;
+          // border: 1px solid red;
           .left {
             margin-bottom: -100px;
             display: flex;
@@ -328,12 +331,13 @@
           margin: 5px 15px;
         }
         .Emp {
-          padding: 15px 20px;
+          padding: 10px 20px;
           // display: flex;
           // // overflow: hidden;
           // width: 600px;
           // overflow-x: auto;
-          width: 600px;
+          width: 28vw !important;
+          // border: 1px solid red;
 
           // border: 1px solid;
           .div_dob {
@@ -352,9 +356,8 @@
               justify-content: center;
               gap: 10px;
               img {
-
-                width: 56px;
-                height: 56px;
+                width: 46px !important;
+                height: 46px !important;
                 border: 3px solid rgba(95, 95, 95, 0.364);
                 border-radius: 50%;
                 padding: 1px;
@@ -364,10 +367,10 @@
               div {
                 text-align: start;
                 h3 {
-                  font-size: 20px;
+                  font-size: 1rem !important;
                 }
                 p {
-                  font-size: 18px;
+                  font-size: 1rem !important;
                   color: #00000064;
                 }
               }
@@ -377,20 +380,25 @@
         
       }
     }
-    .center_Cart {
+    .flex_right{
+      display: flex;
+      width: 70vw;
+      gap: 10px;
+      .center_Cart {
       border: 1px solid rgb(187, 187, 187);
       border-radius: 10px;
+      // border: 1px solid red;
       .newEmployee {
         .header_newEmp {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          padding: 10px 20px;
+          padding: 15px 20px;
           .number_new_hire {
             h3 {
               text-align: start;
               color: rgb(52, 52, 52);
-              font-size: 22px;
+              font-size: 1rem;
               font-weight: 500;
             }
             div {
@@ -399,11 +407,13 @@
               gap: 5px;
               h2 {
                 color: #27014a;
-                font-size: 28px;
+                font-size: 1.6rem;
               }
               h3 {
+                // border: 1px solid red;
+                display: flex;
                 color: grey;
-                font-size: 28px;
+                font-size: 1.6rem;
                 font-weight: 500;
               }
             }
@@ -413,23 +423,23 @@
             .img_add {
               background: #ffffff;
               z-index: 9;
-              width: 50px;
-              height: 50px;
+              width: 40px;
+              height: 40px;
               border-radius: 50%;
               margin-left: -20px;
               border: 1px solid red;
               display: flex;
               align-items: center;
               justify-content: center;
-              font-size: 36px;
+              font-size: 2rem;
               cursor: pointer;
               color: #27014a;
             }
             .div_newEmp_img {
               img {
-                width: 50px;
-                height: 50px;
-                margin-left: -10px;
+                width: 40px;
+                height: 40px;
+                margin-left: -13px;
               }
             }
           }
@@ -451,17 +461,17 @@
           margin: 5px 15px;
         }
         .Emp {
-          padding: 15px 20px;
+          padding: 10px 20px;
           .div_dob {
             // gap: 10px;
-            margin-top: 20px;
+            margin-top: 15px;
             display: flex;
             align-items: center;
             justify-content: space-between;
 
             p {
               color: rgb(89, 89, 89);
-              font-size: 18px;
+              font-size: 1rem;
             }
 
             .img_dob_name {
@@ -470,8 +480,8 @@
               justify-content: center;
               gap: 10px;
               img {
-                width: 56px;
-                height: 56px;
+                width: 46px;
+                height: 46px;
                 border: 3px solid rgba(95, 95, 95, 0.364);
                 border-radius: 50%;
                 padding: 1px;
@@ -481,10 +491,10 @@
               div {
                 text-align: start;
                 h3 {
-                  font-size: 20px;
+                  font-size: 1rem;
                 }
                 p {
-                  font-size: 18px;
+                  font-size: 1rem;
                   font-weight: 500;
                   margin-bottom: 10px;
                   color: #00000064;
@@ -510,12 +520,13 @@
               h3 {
                 text-align: start;
                 color: rgb(52, 52, 52);
-                font-size: 22px;
+                font-size: 1.1rem;
                 font-weight: 500;
               }
               p {
                 color: grey;
                 padding-top: 5px;
+                font-size: 1rem;
               }
               div {
                 display: flex;
@@ -554,17 +565,17 @@
             margin: 5px 15px;
           }
           .Emp {
-            padding: 15px 20px;
+            padding: 10px 20px;
             .div_dob {
               // gap: 10px;
-              margin-top: 20px;
+              margin-top: 15px;
               display: flex;
               align-items: center;
               justify-content: space-between;
 
               p {
                 color: rgb(89, 89, 89);
-                font-size: 18px;
+                font-size: 1rem;
               }
 
               .img_dob_name {
@@ -573,8 +584,8 @@
                 justify-content: center;
                 gap: 10px;
                 img {
-                  width: 56px;
-                  height: 56px;
+                  width: 46px;
+                  height: 46px;
                   border: 3px solid rgba(95, 95, 95, 0.364);
                   border-radius: 50%;
                   padding: 1px;
@@ -584,10 +595,10 @@
                 div {
                   text-align: start;
                   h3 {
-                    font-size: 20px;
+                    font-size: 1rem;
                   }
                   p {
-                    font-size: 18px;
+                    font-size: 1rem;
                     font-weight: 500;
                     color: #00000064;
                     display: flex;
@@ -601,7 +612,7 @@
                       height: 7px;
                       margin-top: 5px;
                       background: red;
-                      border: 2px solid red;
+                      border: 1px solid red;
                       border-radius: 50%;
                       margin-right: 4px;
                       gap: 10px;
@@ -613,6 +624,7 @@
           }
         }
       }
+    }
     }
 
     // Responsive design for mobile screens
@@ -905,7 +917,16 @@
     }
   }
 }
+@media (max-width: 1288px){
+  .ADMIN_EMP .content_emp_three {
+    flex-direction: column;
+}
+.ADMIN_EMP .content_emp_three .flex_right{
+  width: 100%;
+}
 
+
+}
 @media (max-width: 768px) {
   .dashboard-container {
     flex-direction: column;

@@ -13,9 +13,9 @@ import { TiArrowUnsorted } from "react-icons/ti";
 import { MdDateRange } from "react-icons/md";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
-import '../styles/EmployeeOnboarding.scss';
+import './AllEmployeeList.scss';
 
-const EmployeeOnboarding = () => {
+const AllEmployeeList = () => {
     const [hidImport, setHidImport] = useState(true);
     const [employees, setEmployees] = useState([
         { id: "EMP - 0078659", firstName: "Satyam", lastName: "Singh", email: "ananya.singh@example.com", phone: "+918555031082", department: "Human Resources", dateOfJoining: "16-May-2024", status: "Active", isChecked: false },
@@ -436,5 +436,5 @@ const EmployeeOnboarding = () => {
     );
 };
 
-export default EmployeeOnboarding;
+export default AllEmployeeList;
 // 

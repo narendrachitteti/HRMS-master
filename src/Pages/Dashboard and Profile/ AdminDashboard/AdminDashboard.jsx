@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import Admin_IMG from '../../assets/user.png'
+import Admin_IMG from '../../../assets/user.png'
 import { GiAlarmClock } from "react-icons/gi";
 import { FaAngleDown, FaChevronRight, FaRegCalendarAlt } from "react-icons/fa";
 import { LiaBirthdayCakeSolid } from "react-icons/lia";
-import img_emp1 from '../../assets/emp1.png'
+import img_emp1 from '../../../assets/emp1.png'
 import { TfiLayoutMenuSeparated } from "react-icons/tfi";
 import { RiUser6Line } from "react-icons/ri";
 import { IoMdTrendingDown, IoMdTrendingUp } from "react-icons/io";
@@ -77,7 +77,7 @@ const AdminDashboard = () => {
 
     // new join
 
-    const getTopNewEmployees = employees.slice(0, 4);
+    const getTopNewEmployees = employees.slice(0, 5);
     // new join
     // 
     const settings = {
@@ -204,55 +204,27 @@ const AdminDashboard = () => {
                         </div>
                     </div>
                 </div>
-                <div className="center_Cart">
-                    <div className="newEmployee">
-                        <div className="header_newEmp">
-                            <div className='number_new_hire'>
-                                <h3>New Employee </h3>
-                                <div>
-                                    <h2>04</h2>
-                                    <h3>New Hires</h3>
-                                </div>
-                            </div>
-                            <div className='newEmp_img'>
-                                {getTopNewEmployees.map((emp, i) => (
-                                    <div key={i} className='div_newEmp_img'>
-                                        <img src={emp.Image} alt={emp.name} />
-                                    </div>
-                                ))}
-                                <div className="img_add">
-                                    +
-                                </div>
-                            </div>
-                        </div>
-                        <div className="top_border"></div>
-                        <div className="Emp">
-                            {getTopNewEmployees.map((emp, i) => (
-                                <div key={i} className='div_dob'>
-                                    <div className='img_dob_name'>
-                                        <img src={emp.Image} alt={emp.name} />
-                                        <div>
-                                            <h3>{emp.name}</h3>
-                                            <p> {emp.Roll}</p>
-                                        </div>
-                                    </div>
-                                    <p>{emp.phone}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-                <div className="Right_cart">
-                    <div className="employeesOnLeave">
+                <div className="flex_right">
+                    <div className="center_Cart">
                         <div className="newEmployee">
                             <div className="header_newEmp">
                                 <div className='number_new_hire'>
                                     <h3>New Employee </h3>
                                     <div>
-                                        <p>Monday,15th April</p>
+                                        <h2>04</h2>
+                                        <h3>New Hires</h3>
                                     </div>
                                 </div>
-                                <button>See All</button>
+                                <div className='newEmp_img'>
+                                    {getTopNewEmployees.map((emp, i) => (
+                                        <div key={i} className='div_newEmp_img'>
+                                            <img src={emp.Image} alt={emp.name} />
+                                        </div>
+                                    ))}
+                                    <div className="img_add">
+                                        +
+                                    </div>
+                                </div>
                             </div>
                             <div className="top_border"></div>
                             <div className="Emp">
@@ -262,14 +234,44 @@ const AdminDashboard = () => {
                                             <img src={emp.Image} alt={emp.name} />
                                             <div>
                                                 <h3>{emp.name}</h3>
-                                                {/* <p> {emp.Roll}</p> */}
-                                                <p>15April-17April</p>
-                                                <div><p className='content_dot_red'> Sick Leave </p></div>
+                                                <p> {emp.Roll}</p>
                                             </div>
                                         </div>
-                                        <p> <FaChevronRight /> </p>
+                                        <p>{emp.phone}</p>
                                     </div>
                                 ))}
+                            </div>
+                        </div>
+                    </div>
+                    <div className="Right_cart">
+                        <div className="employeesOnLeave">
+                            <div className="newEmployee">
+                                <div className="header_newEmp">
+                                    <div className='number_new_hire'>
+                                        <h3>New Employee </h3>
+                                        <div>
+                                            <p>Monday,15th April</p>
+                                        </div>
+                                    </div>
+                                    <button>See All</button>
+                                </div>
+                                <div className="top_border"></div>
+                                <div className="Emp">
+                                    {getTopNewEmployees.map((emp, i) => (
+                                        <div key={i} className='div_dob'>
+                                            <div className='img_dob_name'>
+                                                <img src={emp.Image} alt={emp.name} />
+                                                <div>
+                                                    <h3>{emp.name}</h3>
+                                                    {/* <p> {emp.Roll}</p> */}
+                                                    <p>15April-17April</p>
+                                                    <div><p className='content_dot_red'> Sick Leave </p></div>
+                                                </div>
+                                            </div>
+                                            <p> <FaChevronRight /> </p>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -15,7 +15,13 @@ const Navbar = () => {
         navigate('/');
         
     };
+    const handleNext = () => {
+        navigate(1); // Move forward in history
+    };
 
+    const handlePrevious = () => {
+        navigate(-1); // Move back in history
+    };
 
     return (
         <div className="navbar">
@@ -30,8 +36,8 @@ const Navbar = () => {
             <div className="navbar-right">
                 <div className="leftIcon">
                     <div></div>
-                    <IoIosArrowDropleft />
-                    <IoIosArrowDropright  className='icon2'/>
+                    <span><IoIosArrowDropleft onClick={handlePrevious} /></span>
+                    <span> <IoIosArrowDropright className='icon2' onClick={handleNext} /></span>
                 </div>
                 <div className="search-bar">
                     <input type="text" placeholder="Search employee" />

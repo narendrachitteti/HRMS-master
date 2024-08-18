@@ -29,7 +29,7 @@ const App = () => {
         <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
         <div className="content">
           <Routes>
-            <Route path="/*" element={<_404 />} /> 
+            {/* <Route path="/*" element={<_404 />} /> */}
             <Route path="/" element={<EmployeeForm />} />
             <Route path="/admin-dashboard" element={<AdminDashboard/>}></Route>
             <Route path='/*' element={<_404/>}/>

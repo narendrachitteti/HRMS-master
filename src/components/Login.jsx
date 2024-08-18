@@ -12,22 +12,16 @@ const Login = ({ setIsLoggedIn }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   if (email && password) {
-  //     setIsLoggedIn(true);
-  //     navigate('/admin-dashboard');
-  //   } 
-  //   else {
-  //     alert('Please enter both email and password.');
-  //   }
-  // };
   const handleSubmit = (event) => {
     event.preventDefault();
-    setIsLoggedIn(true);
-    navigate('/admin-dashboard');
+    if (email && password) {
+      setIsLoggedIn(true);
+      navigate('/admin-dashboard');
+    } else {
+      alert('Please enter both email and password.');
+    }
   };
-  
+
   return (
     <div className="login-container">
       <div className="login-image">
@@ -45,7 +39,7 @@ const Login = ({ setIsLoggedIn }) => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               style={{ color: '#b0acac' }}
-              // required
+              required
             />
           </div>
           <div>
@@ -56,7 +50,7 @@ const Login = ({ setIsLoggedIn }) => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               style={{ color: '#b0acac' }}
-              // required
+              required
             />
           </div>
           <div className="remember-forgot-container">
