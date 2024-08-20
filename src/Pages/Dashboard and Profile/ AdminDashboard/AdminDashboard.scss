@@ -2,13 +2,13 @@
 
 .ADMIN_EMP {
   overflow-y: scroll;
-  width: 100%;
-  font-family: Inter;
+  // width: 100%;
+  // font-family: Inter;
   // border: 1px solid red;
   height: 93.4vh;
   .Top_Head_Admin_Dashboard {
     background-blend-mode: multiply;
-    background-color: rgb(61, 44, 103);
+    background-color: rgb(100, 53, 140);
 
     background: linear-gradient(90deg, #522c67 0%, #ab62d3 50%),
       repeating-radial-gradient(
@@ -61,7 +61,7 @@
         align-items: center;
         justify-content: center;
         padding: 10px 20px;
-        background: #150a28ad;
+        background: #260446 !important;
         border-radius: 10px;
         gap: 10px;
         h3 {
@@ -78,7 +78,7 @@
       .check_out_time {
         gap: 10px;
         padding: 10px 20px;
-        background: #180b2ead;
+        background: #260446;
         border-radius: 10px;
         display: flex;
         align-items: center;
@@ -102,24 +102,23 @@
   }
 
   .content_emp_three {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin: 20px;
+    // display: flex;
+    // justify-content: space-between;
+    // gap: 10px;
+    // margin: 20px;
     // border: 1px solid red;
-    // Card styles
+  
     .Left_cart,
     .center_Cart,
     .Right_cart {
-      flex: 1;
+      // flex: 1;
       // background-color: #f5f5f5;
       // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       // border: 1px solid black;
-      text-align: center;
+      // text-align: center;
       transition: transform 0.3s ease;
-
       &:hover {
-        //   transform: translateY(-1px);
+          // transform: translateY(-1px);
       }
     }
     .Left_cart {
@@ -201,7 +200,7 @@
           padding: 10px 20px;
           // border: 1px solid red;
           .left {
-            margin-bottom: -100px;
+            margin-bottom: -40px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -240,17 +239,17 @@
             align-items: center;
             // border: 1px solid red;
             position: sticky;
-            width: 270px;
-            height: 200px;
+            width: 210px;
+            height: 160px;
             overflow: hidden;
-            margin-top: -20px;
-            margin-bottom: 20px;
+            margin-top: -40px;
+            margin-bottom: 10px;
             .gauge {
               display: flex;
               flex-direction: column;
               align-items: center;
               justify-content: center;
-              border: 35px solid #ae3eff;
+              border: 20px solid #ae3eff;
               // background: linear-gradient(31.96deg, #ae3eff 55.43%, #8d31cf 132.82%);
               border-radius: 50%;
               position: fixed;
@@ -260,12 +259,13 @@
               position: static;
 
               span {
-                font-size: 18px;
+                font-size: 1rem;
                 color: #a39e9e;
+                margin-top: -30px;
               }
 
               h1 {
-                font-size: 50px;
+                font-size: 2.4rem;
                 font-weight: bold;
                 margin: 0;
               }
@@ -274,12 +274,12 @@
               &::before {
                 content: "";
                 position: absolute;
-                width: 10px;
+                width: 8px;
                 height: 50px;
                 background-color: #27014a;
                 // border-radius: 0%;
-                rotate: 71deg;
-                margin-left: 240px;
+                rotate: 64deg;
+                margin-left: 200px;
                 z-index: 1;
               }
             }
@@ -287,12 +287,12 @@
               &::before {
                 content: "";
                 position: absolute;
-                width: 10px;
+                width: 8px;
                 height: 60px;
                 background-color: #27014a;
                 // border-radius: 0%;
                 rotate: 25deg;
-                margin-left: 170px;
+                margin-left: 140px;
                 margin-top: -60px;
                 z-index: 1;
               }
@@ -358,7 +358,7 @@
               img {
                 width: 46px !important;
                 height: 46px !important;
-                border: 3px solid rgba(95, 95, 95, 0.364);
+                border: 3px solid #E3E3E3 !important;
                 border-radius: 50%;
                 padding: 1px;
                 object-fit: cover;
@@ -482,7 +482,7 @@
               img {
                 width: 46px;
                 height: 46px;
-                border: 3px solid rgba(95, 95, 95, 0.364);
+                border: 3px solid #E3E3E3;
                 border-radius: 50%;
                 padding: 1px;
                 object-fit: cover;
@@ -507,9 +507,9 @@
     }
 
     .Right_cart {
+      border: 1px solid rgba(145, 145, 145, 0.345);
+      border-radius: 10px;
       .employeesOnLeave {
-        border: 1px solid rgba(145, 145, 145, 0.345);
-        border-radius: 10px;
         .newEmployee {
           .header_newEmp {
             display: flex;
@@ -552,11 +552,13 @@
               background-color: #fff;
               border: 1px solid rgba(0, 0, 0, 0.72);
               cursor: pointer;
+                                color: #3c066e;
+
             }
             button:hover {
-              background-color: #f6f6f6;
+              background-color: #faf9f9;
 
-              box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.157);
+              box-shadow: 0px 0px 5px 1px rgba(171, 163, 163, 0.157);
             }
           }
 
@@ -586,7 +588,7 @@
                 img {
                   width: 46px;
                   height: 46px;
-                  border: 3px solid rgba(95, 95, 95, 0.364);
+                  border: 3px solid #E3E3E3;
                   border-radius: 50%;
                   padding: 1px;
                   object-fit: cover;
@@ -605,6 +607,9 @@
                   }
                   div {
                     display: flex;
+                    p{
+                      color: #bcb7b7;
+                    }
                     .content_dot_red::before {
                       content: "";
                       position: relative;
@@ -642,6 +647,7 @@
       }
     }
   }
+  
 
   .content_emp_four {
     display: flex;
@@ -654,7 +660,7 @@
       // width: 100%;
       flex: 1;
       border: 1px solid rgba(174, 169, 169, 0.542);
-      box-shadow: 0px 0px 10px 0.1px rgba(116, 115, 115, 0.275);
+      box-shadow: 0px 0px 10px 0.1px rgba(116, 115, 115, 0.097) !important;
     }
     .box_ {
       padding: 10px 25px;
@@ -664,6 +670,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        span{
+          cursor: pointer;
+          rotate: 90deg !important;
+        }
       }
       .centerData {
         display: flex;
@@ -917,14 +927,33 @@
     }
   }
 }
-@media (max-width: 1288px){
+@media (max-width: 1208px){
   .ADMIN_EMP .content_emp_three {
     flex-direction: column;
+
+}
+.ADMIN_EMP .content_emp_three .flex_right{
+  // width: 100%;
+}
+.ADMIN_EMP .content_emp_three .Left_cart{
+  display: flex;
+  flex-direction: row !important;
+} 
+.ADMIN_EMP .content_emp_three .Left_cart .left_Bottom_cart .Emp{
+  width: 40vw !important;
+}
+.ADMIN_EMP .content_emp_three .Left_cart .left_Bottom_cart{
+  height: 215px !important;
 }
 .ADMIN_EMP .content_emp_three .flex_right{
   width: 100%;
 }
-
+.slick-dots{
+  bottom: -60px;
+}
+.ADMIN_EMP .content_emp_three .Left_cart .left_Bottom_cart .Emp .div_dob{
+  margin-top: 10px;
+}
 
 }
 @media (max-width: 768px) {
@@ -936,6 +965,3 @@
     }
   }
 }
-
-
-// EmployeeDashboard
