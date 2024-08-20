@@ -13,6 +13,7 @@ import EmployeeDashboard from './Pages/Dashboard and Profile/EmployeeDashboard/E
 import AllEmployeeList from './Pages/Employee onboarding/AllEmployeeList/AllEmployeeList.jsx';
 import AddEmloyee from './Pages/Employee onboarding/AddEmployee/AddEmloyee.jsx';
 import EmployeeDetails from './Pages/Employee onboarding/EmployeeDetail /EmployeeDetails.jsx';
+import Department from './Pages/Employee onboarding/EmployeeDetail /Department.jsx';
 // import AddEmployee from './Pages/Employee onboarding/AddEmployee/NavbarForm.jsx';
 
 
@@ -50,7 +51,7 @@ const App = () => {
                   <Route path="/all-employee-list" element={<AllEmployeeList />} />
                   <Route path="/add-employee" element={<AddEmloyee />} />
                   <Route path="/employee-details" element={<EmployeeDetails />} />
-
+                  <Route path="/department" element={<Department/>} />
                 </Routes>
               </div>
             </div>
